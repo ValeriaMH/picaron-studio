@@ -19,11 +19,13 @@ Font-family:
 
  /* Image Styles */
 
- .bg-image {
-     background-image: url('/images/logo-picaron-1.jpg');
+.bg-image {
+     background-image: url('/images/logo-picaron-2.jpg');
      background-size: cover;
+     background-position: center;
      min-height: 10rem;
  }
+
 
  /* Universal Styles & Utility Classes */
 
@@ -31,4 +33,25 @@ Font-family:
      font-family: 'Mukta Mahee', sans-serif;
  }
 
- 
+header {
+    background-image: url('images/logo-picaron-1.jpg');
+    background-position: center;
+    min-height: 100vh;
+} 
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.padded { padding: 5%; }
+.padded-sm { padding: 1rem; }
+.padded-lg { padding: 10%; }
+
+.center {
+    text-align: center;
+}
