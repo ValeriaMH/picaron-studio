@@ -1,0 +1,34 @@
+/* 
+Colors: 
+Pink: #fc41c6
+Orange: #ff9602
+White: #edeeefff
+Grey: #4a494a
+Green: #668364ff
+
+Font-family: 
+'Mukta Mahee', sans-serif;
+'Courier Prime', monospace;
+ */
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ /* Image Styles */
+
+ .bg-image {
+     background-image: url('/images/logo-picaron-1.jpg');
+     background-size: cover;
+     min-height: 10rem;
+ }
+
+ /* Universal Styles & Utility Classes */
+
+ body {
+     font-family: 'Mukta Mahee', sans-serif;
+ }
+
+ 
