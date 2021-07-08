@@ -7,8 +7,8 @@ Grey: #4a494a
 Green: #668364ff
 
 Font-family: 
-'Mukta Mahee', sans-serif;
-'Courier Prime', monospace;
+'Mukta Mahee', sans-serif; 200 - 800
+'Courier Prime', monospace; 400, 700
  */
 
  * {
@@ -26,27 +26,60 @@ Font-family:
      min-height: 10rem;
  }
 
-
  /* Universal Styles & Utility Classes */
 
  body {
      font-family: 'Mukta Mahee', sans-serif;
+     background-color: #edeeefff;
  }
 
-header {
-    background-image: url('images/logo-picaron-1.jpg');
-    background-position: center;
-    min-height: 100vh;
-} 
+ header {
+    background: #EECDA3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+
+ header h3 {
+     font-size: 5rem;
+     line-height: 1;
+     text-transform: uppercase;
+     letter-spacing: 0.5em;
+ }
+
+ h2 {
+     font-size: 2.5rem;
+     line-height: 1.1;
+     margin-bottom: 1rem;
+ }
+
+ p {
+     font-weight: 300;
+     line-height: 1.5rem;
+     margin-bottom: 1rem;
+ }
+
+ p:last-child {
+     margin-bottom: 0;
+ }
 
 a {
+    color: inherit;
     text-decoration: none;
-    display: inline-block;
+    border-bottom: 1px solid;
+}
+
+a:hover {
+    color: #fc41c6;
 }
 
 img {
     max-width: 100%;
+    display: block;
 }
+  
+
+
 
 .padded { padding: 5%; }
 .padded-sm { padding: 1rem; }
@@ -55,3 +88,157 @@ img {
 .center {
     text-align: center;
 }
+
+.tall-50        { min-height: 50vh; }
+.tall-60        { min-height: 60vh; }
+.tall-70        { min-height: 70vh; }
+.tall-80        { min-height: 80vh; }
+.tall-90        { min-height: 90vh; }
+.tall-100       { min-height: 100vh; }
+
+/* Aspect Ratio */
+
+.portrait-tall { padding-bottom: 203.5%;}
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Gallery Background Images */
+
+.bg-img-1 {
+    background-image: url('/images/picaron-studio1.jpg');
+  }
+  
+  .bg-img-2 {
+    background-image: url('/images/picaron-studio2.jpg');
+  }
+  
+  .bg-img-3 {
+    background-image: url('/images/picaron-studio3.jpg');
+  }
+  
+  .bg-img-4 {
+    background-image: url('/images/picaron-studio4.jpg');
+  }
+  
+  .bg-img-5 {
+    background-image: url('/images/picaron-studio5.jpg');
+  }
+
+  .gallery [class*="col-"] {
+    padding: 0.5%; 
+  }
+
+.button {
+    text-transform: uppercase;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    background-color: #edeeefff;
+    color: #4a494a;
+    border: 1.2px solid;
+    padding: 1rem 2rem;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+.button:hover {
+    color: white;
+    background-color: #fc41c6;
+}
+
+.featured-text {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 0.4em;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    display: inline-block;
+    color: #4a494a;
+    line-height: 1;
+}
+
+.medium-text {
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: #4a494a;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    margin: 7px;
+  }
+
+  .card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
+  }
+
+  .card-review:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
+  }
+
+  .card h3 {
+    font-size: 1.8rem;
+  }
+
+  .card-bg {
+    background-color: #edeeefff;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80%;
+    color: white;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .card-link:hover {
+      color: inherit;
+  }
+
+  .card-review {
+    background-color: white;
+    border-radius: 2px;
+    margin: 10px;
+  }
+
+  .info {
+      padding: 1rem;
+  }
+  
+  .social a {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+  }
+  
+  .vertical a {
+    display: block;
+    border: none;
+  }
+
+  .footer-nav {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.5;
+  }
+
+  .margin-b {
+      margin-bottom: 4rem;
+  }
+
+[class*="col-"] {
+    padding: 0;
+  }
