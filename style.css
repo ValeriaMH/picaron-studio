@@ -99,7 +99,7 @@ li {
 }
 
 .margin-b-4 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .margin-b-sm {
@@ -158,6 +158,16 @@ li {
 
   .bg-dark { 
     background-color: #4a494a;
+    color: white;
+}
+
+.bg-pink { 
+    background-color: #fc41c6;
+    color: white;
+}
+
+.bg-green { 
+    background-color: #668364ff;
     color: white;
 }
 
