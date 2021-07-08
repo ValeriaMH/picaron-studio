@@ -33,12 +33,6 @@ Font-family:
      background-color: #edeeefff;
  }
 
- header {
-    background: #EECDA3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
- }
 
  header h3 {
      font-size: 5rem;
@@ -48,9 +42,20 @@ background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, F
  }
 
  h2 {
-     font-size: 2.5rem;
+     font-size: 2rem;
      line-height: 1.1;
-     margin-bottom: 1rem;
+ }
+
+ h4 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+ }
+
+ h5 {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
  }
 
  p {
@@ -77,6 +82,10 @@ img {
     max-width: 100%;
     display: block;
 }
+
+li {
+    margin-left: 1rem;
+  }
   
 
 
@@ -85,10 +94,27 @@ img {
 .padded-sm { padding: 1rem; }
 .padded-lg { padding: 10%; }
 
+.padded-top-0 {
+    padding: 0 5%;
+}
+
+.margin-b-4 {
+    margin-bottom: 4rem;
+}
+
+.margin-b-sm {
+  margin-bottom: 1rem;
+}
+
+.margin-t-sm {
+    margin-top: 1rem;
+  }
+
 .center {
     text-align: center;
 }
 
+.tall-2        { min-height: 2vh; }
 .tall-50        { min-height: 50vh; }
 .tall-60        { min-height: 60vh; }
 .tall-70        { min-height: 70vh; }
@@ -130,6 +156,11 @@ img {
     padding: 0.5%; 
   }
 
+  .bg-dark { 
+    background-color: #4a494a;
+    color: white;
+}
+
 .button {
     text-transform: uppercase;
     font-family: 'Courier Prime', monospace;
@@ -145,20 +176,14 @@ img {
 
 .button:hover {
     color: white;
-    background-color: #fc41c6;
+    background-color: #4a494a;
+    border: 1.2px solid #4a494a;
 }
 
 .featured-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.1;
     letter-spacing: 0.4em;
-}
-
-.quote-icon {
-    font-size: 3rem;
-    display: inline-block;
-    color: #4a494a;
-    line-height: 1;
 }
 
 .medium-text {
@@ -170,6 +195,13 @@ img {
 .subtitle {
     font-size: 0.8rem;
     color: #4a494a;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    display: inline-block;
+    color: #4a494a;
+    line-height: 1;
 }
 
 
@@ -215,6 +247,12 @@ img {
   .info {
       padding: 1rem;
   }
+
+  .header-bg {
+    background: #EECDA3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
   
   .social a {
     font-size: 1.5rem;
@@ -235,10 +273,9 @@ img {
       line-height: 1.5;
   }
 
-  .margin-b {
-      margin-bottom: 4rem;
-  }
-
-[class*="col-"] {
-    padding: 0;
-  }
+  .icon {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
