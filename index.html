@@ -3,6 +3,9 @@
 
     <head>
 
+        <!-- Viewport meta for responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title> Picaron Studio </title>
 
          <!------------  Fontawesome icons ------------>
@@ -27,17 +30,17 @@
 
           <!-------------------- Header banner -------------------->
 
-        <header class="grid tall-100 header-bg">
+        <header class="grid tall-100 header-bg md-tall-70">
 
             <div class="grid-spaceBetween col-12-top">
 
-                <div class="col-2-middle">
+                <div class="col-2_md-3_xs-12-middle sm-padded-rl-1">
                     <a href="/index.html">
                         <img src="images/picaron-studio6.png">
                     </a>
                 </div>
 
-                <nav class="col-9 center padded-0">
+                <nav class="col-9_xs-12 center padded-0 .sm-margin-rl-1">
                     <a href="/index.html"> Home </a>
                     <a href="/about.html"> About </a>
                     <a href="/services.html"> Services </a>
@@ -60,33 +63,43 @@
 
         <section class="grid gallery padded">
 
-            <div class="col-4 center">
+            <div class="col-4_sm-6 center">
                 <div class="bg-image bg-img-3 portrait">
-                    <a href="#" class="button"> Service 1 </a>
+                    <div>
+                        <a href="#" class="button"> Service 1 </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-4 center">
+            <div class="col-4 center hide-sm">
                 <div class="bg-image bg-img-4 portrait">
-                    <a href="#" class="button"> Service 2 </a>
+                    <div>
+                        <a href="#" class="button"> Service 2 </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-4 center">
+            <div class="col-4 center hide-sm">
                 <div class="bg-image bg-img-5 portrait">
-                    <a href="#" class="button"> Service 3 </a>
+                    <div>
+                        <a href="#" class="button"> Service 3 </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-3 center">
+            <div class="col-3_sm-6 center">
                 <div class="bg-image bg-img-1 portrait-tall">
-                    <a href="#" class="button"> Show me more </a>
+                    <div>
+                        <a href="#" class="button"> Show me more </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-9 center">
+            <div class="col-9_sm-12 center">
                 <div class="bg-image bg-img-2 landscape">
-                    <a href="#" class="button"> Meet us </a>
+                    <div>
+                        <a href="#" class="button"> Meet us </a>
+                    </div>
                 </div>
             </div>
 
@@ -109,16 +122,16 @@
 
             <h2 class="margin-b-sm"> Services </h2>
                 
-            <div class="grid">
+            <div class="grid horizontal-scroll">
 
                 <!-------------- Card 1 ------------->
                 <div class="col-4 padded-top-0">
                     <a href="#" class="card-link">
                         <div class="card">
                             <div class="bg-img-3 card-bg">
-                                <h3> Service 1 </h3>
                             </div>
                             <div class="info">
+                                <h2> Service 1 </h2>
                                 <h4> What's included? </h4>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae facere sint delectus reprehenderit numquam, fugiat officiis hic? Sunt enim omnis voluptatum corporis rerum, illo nam. Iure quod quis quas? </p>
                             </div>
@@ -131,9 +144,9 @@
                     <a href="#" class="card-link">
                         <div class="card">
                             <div class="bg-img-4 card-bg">
-                                <h3> Service 2 </h3>
                             </div>
                             <div class="info">
+                                <h2> Service 2 </h2>
                                 <h4> What's included? </h4>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae facere sint delectus reprehenderit numquam, fugiat officiis hic? Sunt enim omnis voluptatum corporis rerum, illo nam. Iure quod quis quas? </p>
                             </div>
@@ -146,9 +159,9 @@
                     <a href="#" class="card-link">
                         <div class="card">
                             <div class="bg-img-5 card-bg">
-                                <h3> Service 3 </h3>
                             </div>
                             <div class="info">
+                                <h2> Service 3 </h2>
                                 <h4> What's included? </h4>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae facere sint delectus reprehenderit numquam, fugiat officiis hic? Sunt enim omnis voluptatum corporis rerum, illo nam. Iure quod quis quas? </p>
                             </div>
@@ -178,7 +191,7 @@
 
             <h2 class="margin-b-sm"> Reviews </h2>
                 
-            <div class="grid">
+            <div class="grid horizontal-scroll">
 
                 <!-------------- Card 1 ------------->
                 <div class="col-4">
@@ -236,19 +249,19 @@
 
         <footer class="grid-middle center padded">
 
-            <div class="col-12 margin-b-4"> 
+            <div class="col-12 margin-b-4 sm-margin-b"> 
               <a href="#"> 
                 <h3 class="button"> LET'S CONNECT </h3>
               </a>
             </div>
 
-            <div class="col-4-middle"> 
+            <div class="col-4_md-12-middle"> 
                 <a href="/index.html">
                  <h2 class="margin-b-0"> Picaron Studio </h2>
                 </a>
             </div>
 
-            <nav class="col-4 social"> 
+            <nav class="col-4_md-12 social"> 
               <a href="#">
                 <i class="fab fa-instagram"></i>
               </a>
@@ -263,7 +276,7 @@
               </a>
             </nav>
 
-            <nav class="col-4 vertical footer-nav"> 
+            <nav class="col-4_md-12 vertical footer-nav"> 
               <a href="/index.html"> Home </a>
               <a href="/about.html"> About </a>
               <a href="/services.html"> Services </a>

@@ -27,7 +27,7 @@ Font-family:
 .padded-sm { padding: 1rem; }
 .padded-lg { padding: 10%; }
 
-.padded-top-0 { padding: 0 5%; }
+.padded-top-0 { padding: 0 4%; }
 
 .padded-0 { padding: 0; }
 
@@ -46,6 +46,10 @@ Font-family:
 
 header {
   padding: 2% 5%;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 header h3 {
@@ -89,6 +93,20 @@ background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, F
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.5;
+}
+
+/* Social Icons Style */
+  
+.social a {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  margin: 0 0.5rem;
+  border: none;
+}
+
+.vertical a {
+  display: block;
+  border: none;
 }
 
 
@@ -184,7 +202,6 @@ font-size: 3rem;
 
 /* Min Height -------------------*/
 
-.tall-2        { min-height: 2vh; }
 .tall-50        { min-height: 50vh; }
 .tall-60        { min-height: 60vh; }
 .tall-70        { min-height: 70vh; }
@@ -208,7 +225,10 @@ font-size: 3rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 10rem;
+  min-height: 27rem;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1rem;
 }
 
   .bg-img-1 {
@@ -250,23 +270,6 @@ font-size: 3rem;
     color: white;
 }
 
-
-
-
- /* Social Icons Style */
-  
- .social a {
-  font-size: 1.5rem;
-  padding: 0 1rem;
-  margin: 0 0.5rem;
-  border: none;
-}
-
-.vertical a {
-  display: block;
-  border: none;
-}
-
 /* Button & Form Styles */
 
 .button {
@@ -277,7 +280,7 @@ font-size: 3rem;
     background-color: #edeeefff;
     color: #4a494a;
     border: 1.2px solid;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1rem;
     transition: all 0.3s;
     display: inline-block;
   }
@@ -348,7 +351,7 @@ textarea:focus {
   .card {
     background-color: white;
     border-radius: 5px;
-    margin: 7px;
+    margin: 1px;
   }
 
   .card:hover {
@@ -359,7 +362,7 @@ textarea:focus {
     box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
   }
 
-  .card h3 {
+  .card h2 {
     font-size: 1.8rem;
   }
 
@@ -395,6 +398,136 @@ textarea:focus {
   display: inline-block;
   color: #4a494a;
   line-height: 1;
+}
+
+
+/* General CSS Responsive Styles (Apply everywhere unless overrided) */
+
+.show-xs,
+.show-sm,
+.show-md {
+  display: none;
+}
+
+/* ------------------ MD Media Query (64em / 1024px) --------------------- */
+/* Styles added here will apply at devices smaller than 1024px or zoomed in equivalent */
+
+@media(max-width:64em) {
+
+  .show-md { display: block; }
+  .hide-md { display: none; }
+
+  .md-tall-70 { min-height: 70vh; }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+}
+
+/* ------------------ SM Media Query (48em / 768px) --------------------- */
+/* Styles added here will apply at devices smaller than 768px or zoomed in equivalent */
+
+@media(max-width:48em) {
+
+  html { font-size: 14px; }
+  p { font-size: 1.1rem; }
+
+  .show-sm { display: block; }
+  .hide-sm { display: none; }
+
+  .sm-text-center   { text-align: center; }
+  .sm-text-left     { text-align: left; }
+  .sm-text-right    { text-align: right; }
+
+  .sm-padded        { padding: 5%; }
+  .sm-padded-1      { padding: 1rem; }
+  .sm-padded-05     { padding: 0.5rem; }
+
+  .sm-padded-t-0    { padding-top: 0; }
+  .sm-padded-b-0    { padding-bottom: 0; }
+  .sm-padded-l-0    { padding-left: 0; }
+  .sm-padded-r-0    { padding-right: 0; }
+
+  .sm-padded-rl-1   { padding: 0 1rem 0.3rem;}
+
+  .sm-margin-b { margin-bottom: 0.2rem; }
+
+  header nav a { margin: 0 0.4rem; }
+
+  header h3 { font-size: 11vw; }
+
+  header h1 {
+      font-size: 1.4rem;
+      font-weight: 300;
+  }
+
+  .sm-square { padding-bottom: 100%; }
+  .sm-landscape { padding-bottom: 66%; }
+
+  .bg-image {
+    min-height: 22rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem; 
+  }
+
+  .featured-text {
+    font-size: 5vw;
+    letter-spacing: 0.3em;
+  }
+  
+}
+
+/* ------------------ XS Media Query (36em / 576px) --------------------- */
+/* Styles added here will apply at devices smaller than 576px or zoomed in equivalent */
+
+@media(max-width:36em) {
+
+  .horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .show-xs { display: block; }
+  .hide-xs { display: none; }
+
+  img {
+    max-width: 35%;
+  }
+
+  .bg-image {
+    min-height: 11rem;
+  }
+
+  .button {
+    padding: 0.3rem 0.5rem;
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+  }
+
+  .xs-vertical a {
+    display: block;
+    border: none;
+  }
+  
+}
+
+
+/* ------------------ XXS Media Query (25em / 400px) --------------------- */
+/* Styles added here will apply at devices smaller than 400px or zoomed in equivalent */
+
+@media(max-width:25em) {
+
+  html { font-size: 12px; }
+  p { font-size: 1rem; }
+
+  .xxs-stack {
+    flex-basis: 100%;
+    max-width: 100%
+  }
+  
 }
 
 
