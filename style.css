@@ -11,108 +11,34 @@ Font-family:
 'Courier Prime', monospace; 400, 700
  */
 
+ /* CSS RESET */
+
  * {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
  }
 
- /* Image Styles */
+ /*------------------------------- Universal Styles & Utility Classes -----------------------------*/
 
-.bg-image {
-     background-image: url('/images/logo-picaron-2.jpg');
-     background-size: cover;
-     background-position: center;
-     min-height: 10rem;
- }
-
- /* Universal Styles & Utility Classes */
-
- body {
-     font-family: 'Mukta Mahee', sans-serif;
-     background-color: #edeeefff;
- }
-
-
- header h3 {
-     font-size: 5rem;
-     line-height: 1;
-     text-transform: uppercase;
-     letter-spacing: 0.5em;
- }
-
- h2 {
-     font-size: 2rem;
-     line-height: 1.1;
- }
-
- h4 {
-    font-size: 1.5rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
- }
-
- h5 {
-    font-size: 1.3rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
- }
-
- p {
-     font-weight: 300;
-     line-height: 1.5rem;
-     margin-bottom: 1rem;
- }
-
- p:last-child {
-     margin-bottom: 0;
- }
-
-a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid;
-}
-
-a:hover {
-    color: #fc41c6;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-li {
-    margin-left: 1rem;
-  }
-  
-
-
+/* Padding Classes -------------------*/
 
 .padded { padding: 5%; }
 .padded-sm { padding: 1rem; }
 .padded-lg { padding: 10%; }
 
-.padded-top-0 {
-    padding: 0 5%;
-}
+.padded-top-0 { padding: 0 5%; }
 
-.margin-b-4 {
-    margin-bottom: 3rem;
-}
+.padded-0 { padding: 0; }
 
-.margin-b-sm {
-  margin-bottom: 1rem;
-}
+/* Margin Classes -------------------*/
 
-.margin-t-sm {
-    margin-top: 1rem;
-  }
+.margin-b-4 { margin-bottom: 3rem; }
 
-.center {
-    text-align: center;
-}
+.margin-b-sm { margin-bottom: 1rem; }
+.margin-t-sm { margin-top: 1rem; }
+
+/* Min Height -------------------*/
 
 .tall-2        { min-height: 2vh; }
 .tall-50        { min-height: 50vh; }
@@ -122,6 +48,7 @@ li {
 .tall-90        { min-height: 90vh; }
 .tall-100       { min-height: 100vh; }
 
+
 /* Aspect Ratio */
 
 .portrait-tall { padding-bottom: 203.5%;}
@@ -130,9 +57,17 @@ li {
 .landscape { padding-bottom: 66%; }
 .landscape-wide { padding-bottom: 56%; }
 
-/* Gallery Background Images */
+/* Background Images */
 
-.bg-img-1 {
+.bg-image {
+  background-image: url('/images/logo-picaron-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 10rem;
+}
+
+  .bg-img-1 {
     background-image: url('/images/picaron-studio1.jpg');
   }
   
@@ -156,7 +91,7 @@ li {
     padding: 0.5%; 
   }
 
-  .bg-dark { 
+.bg-dark { 
     background-color: #4a494a;
     color: white;
 }
@@ -170,6 +105,141 @@ li {
     background-color: #668364ff;
     color: white;
 }
+
+
+
+/* Typography Styles -------------*/
+
+body {
+  font-family: 'Mukta Mahee', sans-serif;
+  background-color: #edeeefff;
+}
+
+h2, h3, h4, h5, h6 {
+margin-bottom: 1rem;
+line-height: 1;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+ font-size: 1.5rem;
+ margin-bottom: 1.5rem;
+}
+
+h5 {
+ font-size: 1.3rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+ color: inherit;
+ text-decoration: none;
+ border-bottom: 1px solid;
+}
+
+a:hover {
+ color: #fc41c6;
+}
+
+img {
+ max-width: 100%;
+ display: block;
+}
+
+li {
+ margin-left: 1rem;
+}
+
+.center { text-align: center; }
+.right  { text-align: right; }
+.left   { text-align: left; }
+
+/* Special Text */
+
+.featured-text {
+font-size: 2.5rem;
+line-height: 1.1;
+letter-spacing: 0.4em;
+}
+
+.medium-text {
+font-size: 1rem;
+line-height: 1.1;
+letter-spacing: 0.02em;
+}
+
+.subtitle {
+font-size: 0.8rem;
+color: #4a494a;
+}
+
+.quote-icon {
+font-size: 3rem;
+display: inline-block;
+color: #4a494a;
+line-height: 1;
+}
+
+.icon {
+display: block;
+text-align: center;
+margin-bottom: 2rem;
+font-size: 3rem;
+}
+
+/* Header & Footer Styles ---------------------- */
+
+header {
+  padding: 2% 5%;
+}
+
+header h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+header h2 {
+  margin-bottom: 0;
+}
+
+.header-bg {
+  background: #EECDA3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.footer-nav {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+ /* Social Icons Style */
+  
+ .social a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: none;
+}
+
+.vertical a {
+  display: block;
+  border: none;
+}
+
+/* Button & Form Styles */
 
 .button {
     text-transform: uppercase;
@@ -190,6 +260,14 @@ li {
     border: 1.2px solid #4a494a;
 }
 
+input,
+textarea {
+  width: 100%;
+  display: block;
+}
+
+/* Special Text */
+
 .featured-text {
     font-size: 2.5rem;
     line-height: 1.1;
@@ -207,15 +285,18 @@ li {
     color: #4a494a;
 }
 
-.quote-icon {
-    font-size: 3rem;
-    display: inline-block;
-    color: #4a494a;
-    line-height: 1;
+
+
+.icon {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
+/* Card Styles */
 
-.card {
+  .card {
     background-color: white;
     border-radius: 5px;
     margin: 7px;
@@ -258,34 +339,13 @@ li {
       padding: 1rem;
   }
 
-  .header-bg {
-    background: #EECDA3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
+/* Testimonial Block -------------- */
   
-  .social a {
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: 0.5rem;
-    border: none;
-  }
-  
-  .vertical a {
-    display: block;
-    border: none;
-  }
-
-  .footer-nav {
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      font-weight: 300;
-      line-height: 1.5;
-  }
-
-  .icon {
-    display: block;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 3rem;
+.quote-icon {
+  font-size: 3rem;
+  display: inline-block;
+  color: #4a494a;
+  line-height: 1;
 }
+
+
